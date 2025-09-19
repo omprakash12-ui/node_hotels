@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.18.0",
+    "nodemon": "^3.1.10",
+    "prompt-sync": "^4.2.0"
+  }
+}
