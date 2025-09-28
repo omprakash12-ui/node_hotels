@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const menuItem = require('./../models/menuItem')
+const MenuItem = require('./../models/menuItem')
 
 router.post('/' , async(req,res) => {
   try{
@@ -20,7 +20,7 @@ router.post('/' , async(req,res) => {
 
 router.get('/', async(req,res) => {
   try{
-   const data = await menuItem.find();
+   const data = await MenuItem.find();
    console.log('data fetched');
    res.status(200).json(data);
   }catch(error){
@@ -67,5 +67,5 @@ router.put('/:id' ,async(req,res) => {
  }
  })
 
- // comment add for testing 
+ // comment add for testing
 module.exports = router;
